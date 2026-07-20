@@ -3,56 +3,76 @@ site_description: ThinkStation P330 Tiny 自宅サーバ構築記録
 site_author: Tanis
 
 theme:
-  name: mkdocs
+  name: material
+  language: ja
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
 
 plugins:
   - search
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
   - tables
-  - toc:
-      permalink: true
 
 nav:
+
   - Home:
       - 概要: index.md
 
   - Hardware:
-      - P330 Tiny: hardware/p330.md
-      - Network: hardware/network.md
-      - Storage: hardware/storage.md
+      - P330 Tiny: 01_hardware/p330.md
+      - Network: 01_hardware/network.md
+      - Storage: 01_hardware/storage.md
 
   - Ubuntu Server:
-      - インストール: ubuntu/ubuntu.md
-      - SSH: ubuntu/ssh.md
-      - Cockpit: ubuntu/cockpit.md
+      - インストール: 02_ubuntu/ubuntu.md
+      - SSH: 02_ubuntu/ssh.md
+      - Cockpit: 02_ubuntu/cockpit.md
 
   - Docker:
-      - Docker概要: docker/docker.md
-      - Compose: docker/compose.md
-      - Portainer: docker/portainer.md
+      - Docker概要: 03_docker/docker.md
+      - Compose: 03_docker/compose.md
+      - Portainer: 03_docker/portainer.md
 
   - Services:
-      - CasaOS: services/casaos.md
-      - Homarr: services/homarr.md
-      - Jellyfin: services/jellyfin.md
-      - Navidrome: services/navidrome.md
-      - Syncthing: services/syncthing.md
-      - Pi-hole: services/pihole.md
-      - EPGStation: services/epgstation.md
+      - CasaOS: 04_services/casaos.md
+      - Homarr: 04_services/homarr.md
+      - Jellyfin: 04_services/jellyfin.md
+      - Navidrome: 04_services/navidrome.md
+      - Syncthing: 04_services/syncthing.md
+      - Pi-hole: 04_services/pihole.md
+      - EPGStation: 04_services/epgstation.md
 
   - NAS:
-      - SMB: nas/smb.md
-      - NFS: nas/nfs.md
-      - Backup: nas/backup.md
+      - SMB: 05_nas/smb.md
+      - NFS: 05_nas/nfs.md
+      - Backup: 05_nas/backup.md
 
   - Troubleshooting:
-      - SSH: troubleshooting/ssh.md
-      - Docker: troubleshooting/docker.md
-      - Network: troubleshooting/network.md
+      - SSH: 06_troubleshooting/ssh.md
+      - Docker: 06_troubleshooting/docker.md
+      - Network: 06_troubleshooting/network.md
 
   - Maintenance:
-      - コマンド集: maintenance/commands.md
-      - 更新履歴: maintenance/changelog.md
-      - ToDo: maintenance/todo.md
+      - コマンド集: 07_maintenance/commands.md
+      - 更新履歴: 07_maintenance/changelog.md
+      - ToDo: 07_maintenance/todo.md
+
+extra_css:
+  - css/extra.css
+
+  - 構成図:
+      - Architecture: diagrams/architecture.md
+
+  - GitHub:
+      - Pages公開: github/pages.md
