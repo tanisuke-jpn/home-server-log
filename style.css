@@ -42,3 +42,7 @@ text-align:center;
 padding:1.5rem;
 color:#666;
 }
+
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #ccc;padding:.6rem;text-align:left}
+th{background:#f3f6fb;width:30%}
