@@ -67,12 +67,13 @@ nav:
       - コマンド集: 07_maintenance/commands.md
       - 更新履歴: 07_maintenance/changelog.md
       - ToDo: 07_maintenance/todo.md
-
-extra_css:
-  - css/extra.css
-
+      
   - 構成図:
       - Architecture: diagrams/architecture.md
 
   - GitHub:
       - Pages公開: github/pages.md
+
+extra_css:
+  - css/extra.css
+
