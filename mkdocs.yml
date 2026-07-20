@@ -1,0 +1,58 @@
+site_name: Tanis Home Server Log
+site_description: ThinkStation P330 Tiny 自宅サーバ構築記録
+site_author: Tanis
+
+theme:
+  name: mkdocs
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home:
+      - 概要: index.md
+
+  - Hardware:
+      - P330 Tiny: hardware/p330.md
+      - Network: hardware/network.md
+      - Storage: hardware/storage.md
+
+  - Ubuntu Server:
+      - インストール: ubuntu/ubuntu.md
+      - SSH: ubuntu/ssh.md
+      - Cockpit: ubuntu/cockpit.md
+
+  - Docker:
+      - Docker概要: docker/docker.md
+      - Compose: docker/compose.md
+      - Portainer: docker/portainer.md
+
+  - Services:
+      - CasaOS: services/casaos.md
+      - Homarr: services/homarr.md
+      - Jellyfin: services/jellyfin.md
+      - Navidrome: services/navidrome.md
+      - Syncthing: services/syncthing.md
+      - Pi-hole: services/pihole.md
+      - EPGStation: services/epgstation.md
+
+  - NAS:
+      - SMB: nas/smb.md
+      - NFS: nas/nfs.md
+      - Backup: nas/backup.md
+
+  - Troubleshooting:
+      - SSH: troubleshooting/ssh.md
+      - Docker: troubleshooting/docker.md
+      - Network: troubleshooting/network.md
+
+  - Maintenance:
+      - コマンド集: maintenance/commands.md
+      - 更新履歴: maintenance/changelog.md
+      - ToDo: maintenance/todo.md
