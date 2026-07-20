@@ -15,6 +15,10 @@ theme:
 
 plugins:
   - search
+  - git-revision-date-localized
+
+repo_url: https://github.com/tanisuke-jpn/home-server-log
+repo_name: home-server-log
 
 markdown_extensions:
   - admonition
