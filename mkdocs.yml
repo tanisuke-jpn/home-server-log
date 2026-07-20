@@ -35,9 +35,9 @@ nav:
       - Storage: 01_hardware/storage.md
 
   - Ubuntu Server:
-      - インストール: 02_ubuntu/ubuntu.md
-      - SSH: 02_ubuntu/ssh.md
-      - Cockpit: 02_ubuntu/cockpit.md
+      - インストール: 02_install/ubuntu.md
+      - SSH: 02_install/ssh.md
+      - Cockpit: 02_install/cockpit.md
 
   - Docker:
       - Docker概要: 03_docker/docker.md
@@ -67,7 +67,7 @@ nav:
       - コマンド集: 07_maintenance/commands.md
       - 更新履歴: 07_maintenance/changelog.md
       - ToDo: 07_maintenance/todo.md
-      
+
   - 構成図:
       - Architecture: diagrams/architecture.md
 
